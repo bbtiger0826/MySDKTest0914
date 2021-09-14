@@ -4,6 +4,6 @@ import android.util.Log
 
 object TestOne {
     fun testOne() {
-        Log.d("bbtig", "test_one")
+        Log.d("bbtig", "test_one123")
     }
 }

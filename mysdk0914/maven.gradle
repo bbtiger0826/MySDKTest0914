@@ -11,7 +11,7 @@ uploadArchives {
 
             repository(url: "file://${deployPath.absolutePath}")
             pom.project {
-                version '1.0.0'
+                version '1.0.1'
                 groupId 'com.bbtiger.candy'
                 artifactId 'mysdk'
                 packaging 'aar'
