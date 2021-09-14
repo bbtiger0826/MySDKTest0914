@@ -1,0 +1,22 @@
+apply plugin: 'maven'
+uploadArchives {
+    configuration = configurations.archives
+    repositories {
+        mavenDeployer {
+            def deployPath = file('../MySdkAar')
+            print(deployPath)
+            print("\n")
+            print("絕對路徑：${deployPath.absolutePath}")
+            print("\n")
+
+            repository(url: "file://${deployPath.absolutePath}")
+            pom.project {
+                version '1.0.0'
+                groupId 'com.bbtiger.candy'
+                artifactId 'mysdk'
+                packaging 'aar'
+                description 'exercise'
+            }
+        }
+    }
+}
